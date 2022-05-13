@@ -6,7 +6,14 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
+
+    Animator animator;
     Vector2 moveInput;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -16,7 +23,9 @@ public class Player : MonoBehaviour
     void OnMove(InputValue inputValue)
     {
         moveInput = inputValue.Get<Vector2>();
-        Debug.Log(inputValue);
+        animator.SetFloat("XInput", moveInput.x);
+        animator.SetFloat("YInput", moveInput.y);
+        animator.SetBool("IsMoving", moveInput != Vector2.zero);
     }
 
     void Move()

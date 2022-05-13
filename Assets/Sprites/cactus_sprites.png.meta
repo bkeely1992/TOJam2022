@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cab3b222c40c8745b155d502cc864a6
+guid: aae6897d7ac150e4e93c167860a4ab11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,19 +107,19 @@ TextureImporter:
       name: cactus_sprites_0
       rect:
         serializedVersion: 2
-        x: 147
-        y: 227
-        width: 1511
-        height: 1700
+        x: 191
+        y: 2026
+        width: 1512
+        height: 1697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f095e7b6a4bfc4149b279f7bfa18e0d4
-      internalID: -1603803533
+      spriteID: e95a80a53bf5f114893d5135979bdf88
+      internalID: -83968788
       vertices: []
       indices: 
       edges: []
@@ -128,19 +128,19 @@ TextureImporter:
       name: cactus_sprites_1
       rect:
         serializedVersion: 2
-        x: 1812
-        y: 227
-        width: 1511
-        height: 1700
+        x: 1855
+        y: 2020
+        width: 1513
+        height: 1697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a36b45627d4dac43b4b35e5685ec705
-      internalID: -771455221
+      spriteID: 7f8464b6b6bfa2d418ebba1859901d32
+      internalID: -12716552
       vertices: []
       indices: 
       edges: []
@@ -149,19 +149,19 @@ TextureImporter:
       name: cactus_sprites_2
       rect:
         serializedVersion: 2
-        x: 3501
-        y: 227
-        width: 1508
-        height: 1700
+        x: 3546
+        y: 2020
+        width: 1511
+        height: 1697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4690e6748675104cbc116f32e83c9aa
-      internalID: 921899865
+      spriteID: 5f984f84ced1f8b4ea56daa0e2d43774
+      internalID: -1859101755
       vertices: []
       indices: 
       edges: []
@@ -170,40 +170,103 @@ TextureImporter:
       name: cactus_sprites_3
       rect:
         serializedVersion: 2
-        x: 5171
-        y: 227
-        width: 1511
-        height: 1700
+        x: 5216
+        y: 2020
+        width: 1512
+        height: 1697
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb1178d052760d43ad07694ad2756ef
-      internalID: -1285826511
+      spriteID: e61f3449a035e714ab6b3e54d30d4009
+      internalID: 435231843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cactus_sprites_4
+      name: cactus_sprites_5
       rect:
         serializedVersion: 2
-        x: 6885
-        y: 227
-        width: 1510
-        height: 1700
+        x: 509
+        y: 165
+        width: 838
+        height: 1696
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3674e667e2075bc4fa39270231167070
-      internalID: 1500615777
+      spriteID: daaa7f032b1b95d4cab4a3257d38dec1
+      internalID: -1592747744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cactus_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 189
+        width: 1510
+        height: 1697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691273b15d2c81f4faa8eead4c6edb8f
+      internalID: 797887140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cactus_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 172
+        width: 837
+        height: 1697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30057ed870b4aa449aeb4bbc58bce986
+      internalID: 1283395312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cactus_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 196
+        width: 1512
+        height: 1697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d63f902a0e45e44c9111e4dc541ebcc
+      internalID: -785843010
       vertices: []
       indices: 
       edges: []
@@ -219,11 +282,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cactus_sprites_2: 921899865
-      cactus_sprites_0: -1603803533
-      cactus_sprites_1: -771455221
-      cactus_sprites_4: 1500615777
-      cactus_sprites_3: -1285826511
+      cactus_sprites_12: 1814449587
+      cactus_sprites_11: 1283395312
+      cactus_sprites_2: -1859101755
+      cactus_sprites_10: 861426191
+      cactus_sprites_15: -283762374
+      cactus_sprites_8: 797887140
+      cactus_sprites_18: 408906014
+      cactus_sprites_16: 1488614021
+      cactus_sprites_17: 1623776788
+      cactus_sprites_0: -83968788
+      cactus_sprites_1: -12716552
+      cactus_sprites_13: -785843010
+      cactus_sprites_6: -728449875
+      cactus_sprites_5: -1592747744
+      cactus_sprites_9: 74264298
+      cactus_sprites_4: 663068760
+      cactus_sprites_7: -1634179640
+      cactus_sprites_19: -1883509730
+      cactus_sprites_3: 435231843
+      cactus_sprites_14: -591074088
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
