@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] int maxHealth = 5;
     [SerializeField] int currentHealth = 5;
+
+    List<Collectible> collectibles = new List<Collectible>();
 
     Animator animator;
     Rigidbody2D rigidBody;
@@ -36,5 +39,15 @@ public class Player : MonoBehaviour
     {
         var delta = moveInput * moveSpeed;
         rigidBody.velocity = delta;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Collectible")
+        {
+            collectibles.Add(collision.gameObject.GetComponent<Collectible>());
+            Destroy(collision.gameObject);
+            Debug.Log(string.Join(',', collectibles.Select(x => x.collectibleType)));
+        }
     }
 }

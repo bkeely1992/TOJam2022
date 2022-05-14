@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  maxHealth: 5
+  currentHealth: 5
 --- !u!70 &7803078264932522013
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
