@@ -104,27 +104,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: surgeon_arm_base
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 742
-        height: 448
-      alignment: 9
-      pivot: {x: 0.9166791, y: 0.88206166}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00b112a5c3e572c4ca3e16b5c946d7ad
-      internalID: -611055172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: surgeon_arm
       rect:
         serializedVersion: 2
@@ -146,13 +125,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: surgeon_hand
+      name: surgeon_arm_0
       rect:
         serializedVersion: 2
-        x: 350
-        y: 461
-        width: 213
-        height: 215
+        x: 0
+        y: 301
+        width: 2338
+        height: 1450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,29 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1e0323308fe134459822e5cf8deb52a
-      internalID: -1802293700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: surgeon_scalpel
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 437
-        width: 288
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e70b6c1a7c30faa4ba713afad565dfa6
-      internalID: 2017376531
+      spriteID: b463ce199317e564cb443bdb48d83d23
+      internalID: -1790286114
       vertices: []
       indices: 
       edges: []
@@ -199,6 +157,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       surgeon_arm_base: -611055172
+      surgeon_arm_0: -1790286114
       surgeon_arm: -1661179735
       surgeon_hand: -1802293700
       surgeon_scalpel: 2017376531
