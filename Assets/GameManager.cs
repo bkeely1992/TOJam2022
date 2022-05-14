@@ -6,6 +6,7 @@ public class GameManager : Singleton<GameManager>
 {
     public LayerMask enemyDamageLayerMask;
     public GameObject playerProjectileContainer;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
