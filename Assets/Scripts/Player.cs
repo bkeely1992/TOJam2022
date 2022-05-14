@@ -10,11 +10,13 @@ public class Player : MonoBehaviour
     [SerializeField] int currentHealth = 5;
 
     Animator animator;
+    Rigidbody2D rigidBody;
     Vector2 moveInput;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        var delta = moveInput * moveSpeed * Time.deltaTime;
-        transform.position = new Vector2(transform.position.x + delta.x, transform.position.y + delta.y);
+        var delta = moveInput * moveSpeed;
+        rigidBody.velocity = delta;
     }
 }
