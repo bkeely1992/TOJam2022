@@ -6,6 +6,7 @@ public class GameManager : Singleton<GameManager>
 {
     public LayerMask enemyDamageLayerMask;
     public LayerMask playerProjectileLayerMask;
+    public LayerMask collectibleLayerMask;
     public GameObject playerProjectileContainer;
     public GameObject effectContainer;
     public Player player;

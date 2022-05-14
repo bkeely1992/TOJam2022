@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PillSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject pill;
+    [SerializeField] List<GameObject> pills;
     [SerializeField] float pillSpawnTime = 2f;
 
     float mapX;
@@ -16,7 +16,6 @@ public class PillSpawner : MonoBehaviour
     float minX;
     float maxX;
     float minY;
-    float maxY;
 
     void Awake()
     {
@@ -31,8 +30,7 @@ public class PillSpawner : MonoBehaviour
     {
         minX = (float)(horizontalExtend - mapX / 2.0);
         maxX = (float)(mapX / 2.0 - horizontalExtend);
-        minY = (float)(verticalExtent - mapY / 2.0);
-        maxY = (float)(mapY / 2.0) - horizontalExtend;
+        minY = (float)(verticalExtent - mapY / 2.0) + 0.75f;
 
         StartCoroutine(PillSpawn());
     }
@@ -42,7 +40,7 @@ public class PillSpawner : MonoBehaviour
         while (true)
         {
             Vector3 pillSpawn = new Vector3(Random.Range(minX, maxX), minY, 0);
-            Instantiate(pill, pillSpawn, Quaternion.identity);
+            Instantiate(pills[Random.Range(0, pills.Count)], pillSpawn, Quaternion.identity);
 
             yield return new WaitForSeconds(pillSpawnTime);
         }

@@ -11,10 +11,22 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] int maxHealth = 5;
     [SerializeField] float invincibilitySeconds = 5f;
-    [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] float controllerAimOffset = 0.35f;
+
+    public enum ProjectileType
+    {
+        regular,
+        upgraded
+    }
+    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] GameObject upgradedProjectilePrefab;
+    [SerializeField] float UpgradeDuration = 3f;
+    float timeUpgraded = 0.0f;
+    ProjectileType currentProjectileType = ProjectileType.regular;
+
     public bool isInvincible
     {
         get
@@ -41,12 +53,14 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigidBody;
     Vector2 moveInput;
+    Vector2 lookInput;
     int currentHealth = 5;
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
-    
+
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
     bool isDead = false;
+    bool isFiring = false;
 
     void Start()
     {
@@ -60,6 +74,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        FireProjectile();
 
         if (timeInvincible > 0)
         {
@@ -79,82 +94,124 @@ public class Player : MonoBehaviour
                 timeReloading = 0.0f;
             }
         }
+
+        if (timeUpgraded > 0)
+        {
+            timeUpgraded += Time.deltaTime;
+            if (timeUpgraded > UpgradeDuration)
+            {
+                timeUpgraded = 0.0f;
+            }
+        }
     }
 
     void OnMove(InputValue inputValue)
     {
         moveInput = inputValue.Get<Vector2>();
-        animator.SetFloat("XInput", moveInput.x);
-        animator.SetFloat("YInput", moveInput.y);
+        SetLookDirection();
         animator.SetBool("IsMoving", moveInput != Vector2.zero);
-
-        if (moveInput.x > 0)
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up_right;
-            }
-            else if (moveInput.y == 0)
-            {
-                currentAimingDirection = Direction.right;
-            }
-            else
-            {
-                currentAimingDirection = Direction.down_right;
-            }
-        }
-        else if (moveInput.x == 0)
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up;
-            }
-            else if (moveInput.y == 0)
-            {
-                //Do nothing
-            }
-            else
-            {
-                currentAimingDirection = Direction.down;
-            }
-        }
-        else
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up_left;
-            }
-            else if (moveInput.y == 0)
-            {
-                currentAimingDirection = Direction.left;
-            }
-            else
-            {
-                currentAimingDirection = Direction.down_left;
-            }
-        }
     }
 
-    void OnFire(InputValue inputValue)
+    void OnLook(InputValue inputValue)
     {
         if (!isDead)
         {
+            lookInput = inputValue.Get<Vector2>();
+            SetLookDirection();
 
+            if (lookInput.x > 0)
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up_right;
+                }
+                else if (-controllerAimOffset < lookInput.y && lookInput.y < controllerAimOffset)
+                {
+                    currentAimingDirection = Direction.right;
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down_right;
+                }
+            }
+            else if (-controllerAimOffset < lookInput.x && lookInput.x < controllerAimOffset)
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up;
+                }
+                else if (lookInput.y == 0)
+                {
+                    //Do nothing
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down;
+                }
+            }
+            else
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up_left;
+                }
+                else if (-controllerAimOffset < lookInput.y && lookInput.y < controllerAimOffset)
+                {
+                    currentAimingDirection = Direction.left;
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down_left;
+                }
+            }
+
+            if (lookInput == Vector2.zero)
+                isFiring = false;
+            else
+                isFiring = true;
+        }
+    }
+
+    private void FireProjectile()
+    {
+        if (isFiring)
+        {
             Vector3 spawningPosition = Vector3.zero;
             Quaternion spawningRotation;
 
             if (timeReloading == 0.0f)
             {
-                if (projectilePrefab)
+                var projectile = timeUpgraded > 0 ? upgradedProjectilePrefab : projectilePrefab;
+
+                if (projectile != null)
                 {
                     Debug.LogError("Spawned projectile.");
                     spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
                     spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
-                    Instantiate(projectilePrefab, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
-
+                    Instantiate(projectile, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
                 }
             }
             timeReloading += Time.deltaTime;
+        }
+    }
+
+    private void SetLookDirection()
+    {
+        if (lookInput != Vector2.zero)
+        {
+            animator.SetFloat("XInput", lookInput.x);
+            animator.SetFloat("YInput", lookInput.y);
+        }
+        else if (moveInput != Vector2.zero)
+        {
+            animator.SetFloat("XInput", moveInput.x);
+            animator.SetFloat("YInput", moveInput.y);
+        }
+        else
+        {
+            animator.SetFloat("XInput", 0);
+            animator.SetFloat("YInput", -1);
+
         }
     }
 
@@ -188,9 +245,16 @@ public class Player : MonoBehaviour
     private void Die()
     {
         isDead = true;
+        isFiring = false;
         GetComponent<CapsuleCollider2D>().enabled = false;
         rigidBody.velocity = Vector2.zero;
         animator.SetTrigger("IsDead");
+    }
+
+    private void UpgradeWeapon()
+    {
+        currentProjectileType = ProjectileType.upgraded;
+        timeUpgraded += Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -209,7 +273,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyDamage enemyDamage;
-        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((GameManager.Instance.enemyDamageLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
@@ -217,12 +281,19 @@ public class Player : MonoBehaviour
                 takeDamage(enemyDamage.damage);
             }
         }
-
-        if (collision.tag == "Collectible")
+        else if ((GameManager.Instance.collectibleLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
-            collectibles.Add(collision.gameObject.GetComponent<Collectible>());
+            Debug.Log($"collected: {collision.gameObject.name}, {collision.gameObject.layer}");
+
+            var collectible = collision.gameObject.GetComponent<Collectible>();
+
+            switch (collectible.collectibleType)
+            {
+                case CollectibleType.WeaponUpgrade: UpgradeWeapon(); break;
+                case CollectibleType.KeyItem: collectibles.Add(collectible); ; break;
+            }
+
             Destroy(collision.gameObject);
-            Debug.Log(string.Join(',', collectibles.Select(x => x.collectibleType)));
         }
     }
 }
