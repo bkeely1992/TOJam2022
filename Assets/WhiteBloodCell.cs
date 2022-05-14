@@ -8,6 +8,9 @@ public class WhiteBloodCell : MonoBehaviour
     [SerializeField] float acceleration = 0.1f;
     [SerializeField] float range = 50.0f;
     [SerializeField] float timeToCheck = 0.5f;
+    [SerializeField] List<Sprite> possibleFaces;
+    [SerializeField] SpriteRenderer faceSprite;
+    [SerializeField] List<GameObject> possibleWeapons;
 
     public enum State
     {
@@ -21,7 +24,10 @@ public class WhiteBloodCell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        int chosenFace = Random.Range(0, possibleFaces.Count);
+        faceSprite.sprite = possibleFaces[chosenFace];
+        int chosenWeapon = Random.Range(0, possibleWeapons.Count);
+        possibleWeapons[chosenWeapon].SetActive(true);
     }
 
     // Update is called once per frame

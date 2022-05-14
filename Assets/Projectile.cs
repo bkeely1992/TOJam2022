@@ -26,6 +26,12 @@ public class Projectile : MonoBehaviour
         {
             return;
         }
+        Door door = collision.GetComponent<Door>();
+        if (door)
+        {
+            Debug.LogError("Hit door.");
+            door.TakeDamage(damage);
+        }
 
         GameObject impactEffectObject = Instantiate(impactPrefab, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
         Vector3 dir = (Vector3)((Vector3)collision.transform.position - transform.position);

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c321330429d9b69408723a7dcb6c3f39
+guid: db6caa5b53a1f0845a3a9c78e990d268
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 433
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile_Set_0
+      name: white_blood_cell_body
       rect:
         serializedVersion: 2
-        x: 0
-        y: 868
-        width: 435.2
-        height: 434
+        x: 103
+        y: 679
+        width: 518
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6f5bd526aad1546a7f334d87127689
-      internalID: -171539897
+      spriteID: 414c5429ac4687e488293247e11825b1
+      internalID: 1814135032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_1
+      name: white_blood_cell_good_1
       rect:
         serializedVersion: 2
-        x: 435
-        y: 868
-        width: 435.2
-        height: 434
+        x: 741
+        y: 685
+        width: 520
+        height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c541da440e29c46951f7e9845f37ef
-      internalID: -794298518
+      spriteID: c11d6a24b56101d4fb207e1fe4351172
+      internalID: 1892052010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_2
+      name: white_blood_cell_left_gun
       rect:
         serializedVersion: 2
-        x: 870
-        y: 868
-        width: 435.2
-        height: 434
+        x: 698
+        y: 514
+        width: 145
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0991d182ef5e77e4cb8a5e48a70441c8
-      internalID: 2138451480
+      spriteID: fe801d00a4c5b9b48a295bcb1ae0f8d3
+      internalID: 1439655928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_3
+      name: white_blood_cell_right_gun
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 868
-        width: 435.2
-        height: 434
+        x: 1143
+        y: 498
+        width: 137
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2aaca1e919a98c46a7eb9b9629c621c
-      internalID: 34650951
+      spriteID: 114f3f5d26480f749af23cd0aaeac9db
+      internalID: 1950063352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_4
+      name: white_blood_cell_sword
       rect:
         serializedVersion: 2
-        x: 1740
-        y: 868
-        width: 435.2
-        height: 434
+        x: 909
+        y: 130
+        width: 91
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90291168a5f285a489f903686ca77161
-      internalID: -1222785031
+      spriteID: e91f785cdf257a24db73545a7f593cde
+      internalID: -862263699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_5
+      name: white_blood_cell__pitchfork
       rect:
         serializedVersion: 2
-        x: 0
-        y: 434
-        width: 435.2
-        height: 434
+        x: 1060
+        y: 70
+        width: 128
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f87ec49762098748948c3c51cffbbcb
-      internalID: 889921272
+      spriteID: 40be9b027ce93fc49bb69ab4c98e65c0
+      internalID: -1042731510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_6
+      name: white_blood_cell_left_arm
       rect:
         serializedVersion: 2
-        x: 435
-        y: 434
-        width: 435.2
-        height: 434
+        x: 445
+        y: 57
+        width: 79
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b27c0336a66e5824bafdf4cdac33086f
-      internalID: 1882871784
+      spriteID: 55a828a951264df41b4d1a60c34ad41a
+      internalID: 942978365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_7
+      name: white_blood_cell_right_arm
       rect:
         serializedVersion: 2
-        x: 870
-        y: 434
-        width: 435.2
-        height: 434
+        x: 771
+        y: 57
+        width: 102
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5946dc49788c74690e5a491299fd97
-      internalID: -1629894616
+      spriteID: 4dbece7356fd44840ba18955fc682db8
+      internalID: 1907805494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_8
+      name: white_blood_cell_face_0
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 434
-        width: 435.2
-        height: 434
+        x: 101
+        y: 528
+        width: 202
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b2e6232f9f68e4cbc793643b60b0ca
-      internalID: 797722879
+      spriteID: 99cddda6ecd17004f9a70ea30c778e8c
+      internalID: 1520050704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_9
+      name: white_blood_cell_face_3
       rect:
         serializedVersion: 2
-        x: 1740
-        y: 434
-        width: 435.2
-        height: 434
+        x: 408
+        y: 523
+        width: 204
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cb55dcce53be14a9dbae7434b34a9e
-      internalID: -565829046
+      spriteID: a76f15335a0742541a55644d322a532c
+      internalID: -703860703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_10
+      name: white_blood_cell_face_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 435.2
-        height: 434
+        x: 399
+        y: 374
+        width: 228
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1702cdde61760da428fb4ec9b3a3bfc1
-      internalID: -1338569486
+      spriteID: ea4ca3f139e368c4184ab9c5868f0a53
+      internalID: -877018904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_11
+      name: white_blood_cell_face_5
       rect:
         serializedVersion: 2
-        x: 435
-        y: 0
-        width: 435.2
-        height: 434
+        x: 388
+        y: 202
+        width: 243
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88cb7332ba8e2340b528618f9db8a80
-      internalID: -127189537
+      spriteID: c2b8dee97e1f5ba4c899e575145b3eb9
+      internalID: 1166611510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_12
+      name: white_blood_cell_face_2
       rect:
         serializedVersion: 2
-        x: 870
-        y: 0
-        width: 435.2
-        height: 434
+        x: 95
+        y: 212
+        width: 225
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,20 +370,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a35defa670bf3445b63d15b4e4d42c8
-      internalID: -408343092
+      spriteID: aa182629962f7d449946c0bef5c9c591
+      internalID: -2027537151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tile_Set_13
+      name: white_blood_cell_face_1
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 0
-        width: 435.2
-        height: 434
+        x: 95
+        y: 361
+        width: 222
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,29 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c782bc81a1188c54bad8b65d9bd8a489
-      internalID: 1204898632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tile_Set_14
-      rect:
-        serializedVersion: 2
-        x: 1740
-        y: 0
-        width: 435.2
-        height: 434
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 015c37ccd64b34d4eba45c8c0779eadb
-      internalID: -1054752373
+      spriteID: 29e0ca33123ac6648be7b205994c271d
+      internalID: -1702040430
       vertices: []
       indices: 
       edges: []
@@ -429,21 +408,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tile_Set_13: 1204898632
-      Tile_Set_14: -1054752373
-      Tile_Set_1: -794298518
-      Tile_Set_4: -1222785031
-      Tile_Set_6: 1882871784
-      Tile_Set_2: 2138451480
-      Tile_Set_3: 34650951
-      Tile_Set_0: -171539897
-      Tile_Set_8: 797722879
-      Tile_Set_7: -1629894616
-      Tile_Set_10: -1338569486
-      Tile_Set_5: 889921272
-      Tile_Set_11: -127189537
-      Tile_Set_12: -408343092
-      Tile_Set_9: -565829046
+      white_blood_cell_good_25: -663160157
+      white_blood_cell__pitchfork: -1042731510
+      white_blood_cell_good_21: -2122916554
+      white_blood_cell_good_22: -1550398858
+      white_blood_cell_right_gun: 1950063352
+      white_blood_cell_good_15: 1714426818
+      white_blood_cell_sword: -862263699
+      white_blood_cell_right_arm: 1907805494
+      white_blood_cell_face_3: -703860703
+      white_blood_cell_face_2: -2027537151
+      white_blood_cell_good_13: 1586122297
+      white_blood_cell_good_20: 1721354196
+      white_blood_cell_face_1: -1702040430
+      white_blood_cell_good_16: -1994093014
+      white_blood_cell_body: 1814135032
+      white_blood_cell_good_12: 1414626219
+      white_blood_cell_good_23: -1812124955
+      white_blood_cell_left_gun: 1439655928
+      white_blood_cell_face_0: 1520050704
+      white_blood_cell_good_11: 1805248606
+      white_blood_cell_good_14: -1322102341
+      white_blood_cell_good_24: -888607785
+      white_blood_cell_good_10: 1751271887
+      white_blood_cell_left_arm: 942978365
+      white_blood_cell_good_1: 1892052010
+      white_blood_cell_face_5: 1166611510
+      white_blood_cell_good_19: 135305042
+      white_blood_cell_face_4: -877018904
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
