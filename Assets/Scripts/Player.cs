@@ -11,11 +11,21 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] int maxHealth = 5;
     [SerializeField] float invincibilitySeconds = 5f;
-    [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] float controllerAimOffset = 0.35f;
+
+    public enum ProjectileType
+    {
+        regular,
+        upgraded
+    }
+    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] GameObject upgradedProjectilePrefab;
+    [SerializeField] float UpgradeDuration = 3f;
+    float timeUpgraded = 0.0f;
+    ProjectileType currentProjectileType = ProjectileType.regular;
 
     public bool isInvincible
     {
@@ -47,7 +57,7 @@ public class Player : MonoBehaviour
     int currentHealth = 5;
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
-    
+
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
     bool isDead = false;
     bool isFiring = false;
@@ -84,6 +94,15 @@ public class Player : MonoBehaviour
                 timeReloading = 0.0f;
             }
         }
+
+        if (timeUpgraded > 0)
+        {
+            timeUpgraded += Time.deltaTime;
+            if (timeUpgraded > UpgradeDuration)
+            {
+                timeUpgraded = 0.0f;
+            }
+        }
     }
 
     void OnMove(InputValue inputValue)
@@ -98,7 +117,6 @@ public class Player : MonoBehaviour
         if (!isDead)
         {
             lookInput = inputValue.Get<Vector2>();
-            Debug.Log(lookInput.ToString());
             SetLookDirection();
 
             if (lookInput.x > 0)
@@ -163,13 +181,14 @@ public class Player : MonoBehaviour
 
             if (timeReloading == 0.0f)
             {
-                if (projectilePrefab)
+                var projectile = timeUpgraded > 0 ? upgradedProjectilePrefab : projectilePrefab;
+
+                if (projectile != null)
                 {
                     Debug.LogError("Spawned projectile.");
                     spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
                     spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
-                    Instantiate(projectilePrefab, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
-
+                    Instantiate(projectile, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
                 }
             }
             timeReloading += Time.deltaTime;
@@ -232,6 +251,12 @@ public class Player : MonoBehaviour
         animator.SetTrigger("IsDead");
     }
 
+    private void UpgradeWeapon()
+    {
+        currentProjectileType = ProjectileType.upgraded;
+        timeUpgraded += Time.deltaTime;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyDamage enemyDamage;
@@ -248,7 +273,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyDamage enemyDamage;
-        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((GameManager.Instance.enemyDamageLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
@@ -256,12 +281,19 @@ public class Player : MonoBehaviour
                 takeDamage(enemyDamage.damage);
             }
         }
-
-        if (collision.tag == "Collectible")
+        else if ((GameManager.Instance.collectibleLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
-            collectibles.Add(collision.gameObject.GetComponent<Collectible>());
+            Debug.Log($"collected: {collision.gameObject.name}, {collision.gameObject.layer}");
+
+            var collectible = collision.gameObject.GetComponent<Collectible>();
+
+            switch (collectible.collectibleType)
+            {
+                case CollectibleType.WeaponUpgrade: UpgradeWeapon(); break;
+                case CollectibleType.KeyItem: collectibles.Add(collectible); ; break;
+            }
+
             Destroy(collision.gameObject);
-            Debug.Log(string.Join(',', collectibles.Select(x => x.collectibleType)));
         }
     }
 }
