@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 15418346933502672}
   - component: {fileID: 6103506617443204063}
+  - component: {fileID: 1422998849}
+  - component: {fileID: 1422998848}
   m_Layer: 0
   m_Name: bone_image
   m_TagString: Untagged
@@ -84,6 +86,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1422998849
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265678235914246478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.36
+  m_Points:
+  - {x: -0.37209064, y: 2.9273846}
+  - {x: 0.12937236, y: -2.775387}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1422998848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265678235914246478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f26252fa36698744b09f2d3dff965c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.1
 --- !u!1 &6801250204708628986
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +131,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8906905388227921930}
   - component: {fileID: 719397767}
-  - component: {fileID: 8622658941673626556}
   m_Layer: 0
   m_Name: SpinningBone
   m_TagString: Untagged
@@ -138,16 +174,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8622658941673626556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801250204708628986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f26252fa36698744b09f2d3dff965c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinSpeed: 0.1
