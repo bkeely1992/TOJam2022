@@ -39,13 +39,14 @@ public class Player : MonoBehaviour
     float timeReloading = 0.0f;
     SpriteRenderer sprite;
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
+    bool isDead = false;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-        foreach(FiringDirection firingDirection in firingDirections)
+        foreach (FiringDirection firingDirection in firingDirections)
         {
             firingDirectionMap.Add(firingDirection.direction, firingDirection);
         }
@@ -55,17 +56,17 @@ public class Player : MonoBehaviour
     {
         Move();
 
-        if(timeInvincible > 0)
+        if (timeInvincible > 0)
         {
             timeInvincible += Time.deltaTime;
-            if(timeInvincible > invincibilitySeconds)
+            if (timeInvincible > invincibilitySeconds)
             {
-                sprite.color = new Color(1f,1f,1f, 1f);
+                sprite.color = new Color(1f, 1f, 1f, 1f);
                 timeInvincible = 0.0f;
             }
         }
 
-        if(timeReloading > 0)
+        if (timeReloading > 0)
         {
             timeReloading += Time.deltaTime;
             if (timeReloading > timeToReload)
@@ -82,7 +83,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("YInput", moveInput.y);
         animator.SetBool("IsMoving", moveInput != Vector2.zero);
 
-        if(moveInput.x > 0)
+        if (moveInput.x > 0)
         {
             if (moveInput.y > 0)
             {
@@ -97,13 +98,13 @@ public class Player : MonoBehaviour
                 currentAimingDirection = Direction.down_right;
             }
         }
-        else if(moveInput.x == 0)
+        else if (moveInput.x == 0)
         {
-            if(moveInput.y > 0)
+            if (moveInput.y > 0)
             {
                 currentAimingDirection = Direction.up;
             }
-            else if(moveInput.y == 0)
+            else if (moveInput.y == 0)
             {
                 //Do nothing
             }
@@ -131,44 +132,66 @@ public class Player : MonoBehaviour
 
     void OnFire(InputValue inputValue)
     {
-        
-        Vector3 spawningPosition = Vector3.zero;
-        Quaternion spawningRotation;
-
-        if (timeReloading == 0.0f)
+        if (!isDead)
         {
-            if (projectilePrefab)
+
+            Vector3 spawningPosition = Vector3.zero;
+            Quaternion spawningRotation;
+
+            if (timeReloading == 0.0f)
             {
-                Debug.LogError("Spawned projectile.");
-                spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
-                spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
-                Instantiate(projectilePrefab, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
+                if (projectilePrefab)
+                {
+                    Debug.LogError("Spawned projectile.");
+                    spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
+                    spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
+                    Instantiate(projectilePrefab, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
 
+                }
             }
+            timeReloading += Time.deltaTime;
         }
-        timeReloading += Time.deltaTime;
-
-        
-        
     }
 
     void Move()
     {
-        var delta = moveInput * moveSpeed;
-        rigidBody.velocity = delta;
+        if (!isDead)
+        {
+            var delta = moveInput * moveSpeed;
+            rigidBody.velocity = delta;
+        }
     }
 
     public void takeDamage(int damage)
     {
-        currentHealth -= damage;
-        timeInvincible += Time.deltaTime;
-        sprite.color = new Color(0.5f,0.5f,0.5f, 0.5f);
+        if (!isDead)
+        {
+            currentHealth -= damage;
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+            else
+            {
+                timeInvincible += Time.deltaTime;
+                sprite.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            }
+        }
+    }
+
+    private void Die()
+    {
+        isDead = true;
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        rigidBody.velocity = Vector2.zero;
+        animator.SetTrigger("IsDead");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyDamage enemyDamage;
-        if((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
@@ -181,7 +204,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyDamage enemyDamage;
-        if((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
