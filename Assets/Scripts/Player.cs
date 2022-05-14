@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField] float invincibilitySeconds = 5f;
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
+    [SerializeField] Animator animator;
 
     public Direction currentAimingDirection;
     public List<FiringDirection> firingDirections;
@@ -31,7 +32,6 @@ public class Player : MonoBehaviour
         public float rotation;
     }
 
-    Animator animator;
     Rigidbody2D rigidBody;
     Vector2 moveInput;
     int currentHealth = 5;
@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         foreach (FiringDirection firingDirection in firingDirections)
