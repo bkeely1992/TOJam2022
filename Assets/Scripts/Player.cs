@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] int maxHealth = 5;
+    [SerializeField] int currentHealth = 5;
 
     Animator animator;
     Vector2 moveInput;
