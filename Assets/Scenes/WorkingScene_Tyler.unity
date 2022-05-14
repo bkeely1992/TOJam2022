@@ -140,11 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8906905388227921930, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9129038
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 8906905388227921930, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.914364
+      value: 8.58
       objectReference: {fileID: 0}
     - target: {fileID: 8906905388227921930, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -178,8 +178,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -83.504
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8622658941673626556, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
 --- !u!1 &151105649
 GameObject:
@@ -4678,46 +4677,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1422998845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6265678235914246478, guid: ebb5e9efa83a15e4b809bb5da1cac14d, type: 3}
-  m_PrefabInstance: {fileID: 122707971}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1422998848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422998845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f26252fa36698744b09f2d3dff965c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinSpeed: 0.1
---- !u!68 &1422998849
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422998845}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0.36
-  m_Points:
-  - {x: -0.37209064, y: 2.9273846}
-  - {x: 0.12937236, y: -2.775387}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1545340348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,7 +6043,7 @@ PrefabInstance:
       objectReference: {fileID: 1226234106}
     - target: {fileID: 4453285776597681728, guid: 4c44e877be962ef45904a3fdedfa9437, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00000029802322
+      value: 0.0000002682209
       objectReference: {fileID: 0}
     - target: {fileID: 4453285776597681728, guid: 4c44e877be962ef45904a3fdedfa9437, type: 3}
       propertyPath: m_LocalPosition.y

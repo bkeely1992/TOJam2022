@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
     [SerializeField] Animator animator;
+    [SerializeField] float controllerAimOffset = 0.35f;
 
     public bool isInvincible
     {
@@ -41,12 +42,14 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigidBody;
     Vector2 moveInput;
+    Vector2 lookInput;
     int currentHealth = 5;
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
     SpriteRenderer sprite;
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
     bool isDead = false;
+    bool isFiring = false;
 
     void Start()
     {
@@ -61,6 +64,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        FireProjectile();
 
         if (timeInvincible > 0)
         {
@@ -85,62 +89,75 @@ public class Player : MonoBehaviour
     void OnMove(InputValue inputValue)
     {
         moveInput = inputValue.Get<Vector2>();
-        animator.SetFloat("XInput", moveInput.x);
-        animator.SetFloat("YInput", moveInput.y);
+        SetLookDirection();
         animator.SetBool("IsMoving", moveInput != Vector2.zero);
-
-        if (moveInput.x > 0)
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up_right;
-            }
-            else if (moveInput.y == 0)
-            {
-                currentAimingDirection = Direction.right;
-            }
-            else
-            {
-                currentAimingDirection = Direction.down_right;
-            }
-        }
-        else if (moveInput.x == 0)
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up;
-            }
-            else if (moveInput.y == 0)
-            {
-                //Do nothing
-            }
-            else
-            {
-                currentAimingDirection = Direction.down;
-            }
-        }
-        else
-        {
-            if (moveInput.y > 0)
-            {
-                currentAimingDirection = Direction.up_left;
-            }
-            else if (moveInput.y == 0)
-            {
-                currentAimingDirection = Direction.left;
-            }
-            else
-            {
-                currentAimingDirection = Direction.down_left;
-            }
-        }
     }
 
-    void OnFire(InputValue inputValue)
+    void OnLook(InputValue inputValue)
     {
         if (!isDead)
         {
+            lookInput = inputValue.Get<Vector2>();
+            Debug.Log(lookInput.ToString());
+            SetLookDirection();
 
+            if (lookInput.x > 0)
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up_right;
+                }
+                else if (-controllerAimOffset < lookInput.y && lookInput.y < controllerAimOffset)
+                {
+                    currentAimingDirection = Direction.right;
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down_right;
+                }
+            }
+            else if (-controllerAimOffset < lookInput.x && lookInput.x < controllerAimOffset)
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up;
+                }
+                else if (lookInput.y == 0)
+                {
+                    //Do nothing
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down;
+                }
+            }
+            else
+            {
+                if (lookInput.y > 0)
+                {
+                    currentAimingDirection = Direction.up_left;
+                }
+                else if (-controllerAimOffset < lookInput.y && lookInput.y < controllerAimOffset)
+                {
+                    currentAimingDirection = Direction.left;
+                }
+                else
+                {
+                    currentAimingDirection = Direction.down_left;
+                }
+            }
+
+            if (lookInput == Vector2.zero)
+                isFiring = false;
+            else
+                isFiring = true;
+        }
+    }
+
+    private void FireProjectile()
+    {
+        if (isFiring)
+        {
             Vector3 spawningPosition = Vector3.zero;
             Quaternion spawningRotation;
 
@@ -156,6 +173,26 @@ public class Player : MonoBehaviour
                 }
             }
             timeReloading += Time.deltaTime;
+        }
+    }
+
+    private void SetLookDirection()
+    {
+        if (lookInput != Vector2.zero)
+        {
+            animator.SetFloat("XInput", lookInput.x);
+            animator.SetFloat("YInput", lookInput.y);
+        }
+        else if (moveInput != Vector2.zero)
+        {
+            animator.SetFloat("XInput", moveInput.x);
+            animator.SetFloat("YInput", moveInput.y);
+        }
+        else
+        {
+            animator.SetFloat("XInput", 0);
+            animator.SetFloat("YInput", -1);
+
         }
     }
 
@@ -189,6 +226,7 @@ public class Player : MonoBehaviour
     private void Die()
     {
         isDead = true;
+        isFiring = false;
         GetComponent<CapsuleCollider2D>().enabled = false;
         rigidBody.velocity = Vector2.zero;
         animator.SetTrigger("IsDead");
