@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class DespawnOnPlayerImpact : MonoBehaviour
 {
+    [SerializeField] GameObject impactEffect;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<Player>())
+        Player player = collision.gameObject.GetComponent<Player>();
+        if (player &&
+            !player.isInvincible)
         {
+            Instantiate(impactEffect, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
             Destroy(gameObject);
         }
     }

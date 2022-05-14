@@ -14,6 +14,13 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
 
+    public bool isInvincible
+    {
+        get
+        {
+            return timeInvincible > 0;
+        }
+    }
     public Direction currentAimingDirection;
     public List<FiringDirection> firingDirections;
     List<Collectible> collectibles = new List<Collectible>();

@@ -48,7 +48,8 @@ public class WhiteBloodCell : MonoBehaviour
         {
             case State.alert:
                 //Home in
-                if (GameManager.Instance.player)
+                if (GameManager.Instance.player &&
+                    !GameManager.Instance.player.isInvincible)
                 {
                     transform.position = Vector3.MoveTowards(transform.position, GameManager.Instance.player.transform.position, maxSpeed*Time.deltaTime);
                 }

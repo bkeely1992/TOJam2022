@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public LayerMask enemyDamageLayerMask;
+    public LayerMask playerProjectileLayerMask;
     public GameObject playerProjectileContainer;
-    public GameObject player;
+    public GameObject effectContainer;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8898392818082231975}
   - component: {fileID: 1761028785310974802}
   - component: {fileID: 6528352785419841655}
+  - component: {fileID: 1549150379}
   m_Layer: 3
   m_Name: RedBloodCell
   m_TagString: Untagged
@@ -174,3 +175,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e189f6df14091e40b5b3ae3ff44bfc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impactEffect: {fileID: 413833326784917596, guid: d3a0026672970f74aa8467cc5ace589d, type: 3}
+--- !u!114 &1549150379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898392818082231980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d505836ba9aed044dabcbd0117672cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  deathEffect: {fileID: 413833326784917596, guid: d3a0026672970f74aa8467cc5ace589d, type: 3}
