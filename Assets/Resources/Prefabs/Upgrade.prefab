@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4216084033369016627}
   - component: {fileID: 4216084033369016636}
   m_Layer: 7
-  m_Name: Collectible
+  m_Name: Upgrade
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -425026541, guid: 2508b54ce5e167e4298a3258fa092a43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
