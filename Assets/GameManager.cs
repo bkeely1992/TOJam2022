@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : Singleton<GameManager>
 {
     public LayerMask enemyDamageLayerMask;
+    public GameObject playerProjectileContainer;
 
     // Start is called before the first frame update
     void Start()

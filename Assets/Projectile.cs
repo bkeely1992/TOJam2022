@@ -6,8 +6,6 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float speed;
 
-    private Vector2 movementDirection = Vector2.zero;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +15,6 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3)(speed * movementDirection * Time.deltaTime);
-    }
-
-    public void setMovementDirection(float x, float y)
-    {
-        movementDirection = new Vector2(x, y);
+        transform.position = transform.position + (Vector3)(speed * transform.up * Time.deltaTime);
     }
 }

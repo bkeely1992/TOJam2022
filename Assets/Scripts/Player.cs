@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 
         public Direction direction;
         public GameObject spawningPosition;
-        public Vector3 orientation;
+        public float rotation;
     }
 
     Animator animator;
@@ -38,13 +38,17 @@ public class Player : MonoBehaviour
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
     SpriteRenderer sprite;
-    
+    Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        foreach(FiringDirection firingDirection in firingDirections)
+        {
+            firingDirectionMap.Add(firingDirection.direction, firingDirection);
+        }
     }
 
     void Update()
@@ -60,6 +64,15 @@ public class Player : MonoBehaviour
                 timeInvincible = 0.0f;
             }
         }
+
+        if(timeReloading > 0)
+        {
+            timeReloading += Time.deltaTime;
+            if (timeReloading > timeToReload)
+            {
+                timeReloading = 0.0f;
+            }
+        }
     }
 
     void OnMove(InputValue inputValue)
@@ -68,25 +81,74 @@ public class Player : MonoBehaviour
         animator.SetFloat("XInput", moveInput.x);
         animator.SetFloat("YInput", moveInput.y);
         animator.SetBool("IsMoving", moveInput != Vector2.zero);
+
+        if(moveInput.x > 0)
+        {
+            if (moveInput.y > 0)
+            {
+                currentAimingDirection = Direction.up_right;
+            }
+            else if (moveInput.y == 0)
+            {
+                currentAimingDirection = Direction.right;
+            }
+            else
+            {
+                currentAimingDirection = Direction.down_right;
+            }
+        }
+        else if(moveInput.x == 0)
+        {
+            if(moveInput.y > 0)
+            {
+                currentAimingDirection = Direction.up;
+            }
+            else if(moveInput.y == 0)
+            {
+                //Do nothing
+            }
+            else
+            {
+                currentAimingDirection = Direction.down;
+            }
+        }
+        else
+        {
+            if (moveInput.y > 0)
+            {
+                currentAimingDirection = Direction.up_left;
+            }
+            else if (moveInput.y == 0)
+            {
+                currentAimingDirection = Direction.left;
+            }
+            else
+            {
+                currentAimingDirection = Direction.down_left;
+            }
+        }
     }
 
     void OnFire(InputValue inputValue)
     {
-        Vector3 spawningPosition;
+        
+        Vector3 spawningPosition = Vector3.zero;
         Quaternion spawningRotation;
-        if(timeReloading == 0.0f)
+
+        if (timeReloading == 0.0f)
         {
             if (projectilePrefab)
             {
-                GameObject newProjectile = Instantiate(projectilePrefab, spawningPosition, Quaternion.LookRotation(new Vector3(1, 0, 0)), GameManager.Instance.playerProjectileContainer); 
+                Debug.LogError("Spawned projectile.");
+                spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
+                spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
+                Instantiate(projectilePrefab, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
+
             }
         }
         timeReloading += Time.deltaTime;
 
-        if(timeReloading > timeToReload)
-        {
-            timeReloading = 0.0f;
-        }
+        
         
     }
 
