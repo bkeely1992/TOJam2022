@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] int damage;
+    [SerializeField] GameObject impactPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class Projectile : MonoBehaviour
         {
             return;
         }
+
+        GameObject impactEffectObject = Instantiate(impactPrefab, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
+        Vector3 dir = (Vector3)((Vector3)collision.transform.position - transform.position);
+        dir = -dir.normalized;
+        impactEffectObject.transform.up = dir;
         Destroy(gameObject);
     }
 }
