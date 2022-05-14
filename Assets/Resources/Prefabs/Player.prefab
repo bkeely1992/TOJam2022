@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7803078264932522012}
   - component: {fileID: 7803078264932522013}
   - component: {fileID: 8047606904442013275}
-  - component: {fileID: 1865809573}
+  - component: {fileID: 427877291}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -77,13 +77,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -83968788, guid: aae6897d7ac150e4e93c167860a4ab11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 15.123087, y: 16.97}
+  m_Size: {x: 1.5123087, y: 1.697}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  maxHealth: 5
+  invincibilitySeconds: 1
 --- !u!70 &7803078264932522013
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -169,7 +171,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!95 &1865809573
+--- !u!95 &427877291
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
