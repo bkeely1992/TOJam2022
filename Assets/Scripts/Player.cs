@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float timeToReload = 0.25f;
     [SerializeField] Animator animator;
+    [SerializeField] SpriteRenderer sprite;
     [SerializeField] float controllerAimOffset = 0.35f;
 
     public bool isInvincible
@@ -46,7 +47,7 @@ public class Player : MonoBehaviour
     int currentHealth = 5;
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
-    SpriteRenderer sprite;
+    
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
     bool isDead = false;
     bool isFiring = false;
@@ -54,7 +55,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
         foreach (FiringDirection firingDirection in firingDirections)
         {
             firingDirectionMap.Add(firingDirection.direction, firingDirection);
