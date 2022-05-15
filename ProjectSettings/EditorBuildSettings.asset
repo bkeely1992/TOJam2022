@@ -8,14 +8,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c76b0d94dd591f40ba0bc5495dbdda4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/WorkingScene_Keely.unity
     guid: 81fd6bf3460ae1b4b900a8e8cbc65943
-  - enabled: 1
-    path: Assets/Scenes/WorkingScene_Tyler.unity
-    guid: 928b984f284cf5942b3e47625d799c2f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/WinMenu.unity
+    guid: f7904cdc18f726b45ab643715c6a64c9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 3d4128a1e621ed84f92411c754c686ba, type: 2}

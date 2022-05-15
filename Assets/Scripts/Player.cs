@@ -315,8 +315,7 @@ public class Player : MonoBehaviour
         }
         else if ((GameManager.Instance.collectibleLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
-            Debug.Log($"collected: {collision.gameObject.name}, {collision.gameObject.layer}");
-
+            AudioManager.Instance.PlaySound("Collection");
             var collectible = collision.gameObject.GetComponent<Collectible>();
 
             switch (collectible.collectibleType)
@@ -337,6 +336,10 @@ public class Player : MonoBehaviour
             }
 
             Destroy(collision.gameObject);
+        }
+        else if ((GameManager.Instance.brainLayerMask & (1 << collision.gameObject.layer)) != 0)
+        {
+            FindObjectOfType<MenuManager>().LoadWinScene();
         }
     }
 }
