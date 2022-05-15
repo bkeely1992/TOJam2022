@@ -8,6 +8,7 @@ public class ShootAtTarget : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float fireDelay = 0.5f;
     [SerializeField] float range = 5;
+    [SerializeField] string attackSound = "";
 
     float timeSinceFire = 0.0f;
 
@@ -29,6 +30,10 @@ public class ShootAtTarget : MonoBehaviour
 
             if (hit.collider != null)
             {
+                if(attackSound != "")
+                {
+                    AudioManager.Instance.PlaySound(attackSound, true);
+                }
                 var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
                 var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 Instantiate(projectilePrefab, gameObject.transform.position, rotation, GameManager.Instance.enemyProjectileContainer.transform);
