@@ -18,7 +18,19 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/GameOverMenu.unity
+    guid: 1cbb66195d80a7a4085f6711f5f35bbb
+  - enabled: 1
     path: Assets/Scenes/WinMenu.unity
     guid: f7904cdc18f726b45ab643715c6a64c9
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a9d00042caa356047b4fd6c82db5fb9a
+  - enabled: 0
+    path: Assets/Scenes/WorkingScene_Myles.unity
+    guid: 001b9029ba965274f9c2f63627828498
+  - enabled: 0
+    path: Assets/Scenes/WorkingScene_Tyler.unity
+    guid: 1e0296990927eb648b156eb26cb7ba0e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 3d4128a1e621ed84f92411c754c686ba, type: 2}
