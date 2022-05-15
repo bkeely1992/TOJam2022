@@ -188,7 +188,8 @@ MonoBehaviour:
   targetTransform: {fileID: 0}
   projectilePrefab: {fileID: 2966323292512401728, guid: 105e9cc727a2ef74b8397a289536b47a, type: 3}
   fireDelay: 1
-  range: 10
+  range: 8
+  attackSound: 
 --- !u!50 &1590024983
 Rigidbody2D:
   serializedVersion: 4
