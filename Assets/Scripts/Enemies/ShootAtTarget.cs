@@ -31,7 +31,7 @@ public class ShootAtTarget : MonoBehaviour
             {
                 var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
                 var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                Instantiate(projectilePrefab, gameObject.transform.position, rotation);
+                Instantiate(projectilePrefab, gameObject.transform.position, rotation, GameManager.Instance.enemyProjectileContainer.transform);
             }
         }
 

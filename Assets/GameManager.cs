@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject playerProjectileContainer;
     public GameObject effectContainer;
     public GameObject enemiesContainer;
+    public GameObject enemyProjectileContainer;
     public Player player;
     public List<Door> questDoors;
 
