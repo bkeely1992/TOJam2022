@@ -6,6 +6,8 @@ public class PillSpawner : MonoBehaviour
 {
     [SerializeField] List<GameObject> pills;
     [SerializeField] float pillSpawnTime = 2f;
+    [SerializeField] float pillHeightOffset = 3.0f;
+
 
     float mapX;
     float mapY;
@@ -13,15 +15,23 @@ public class PillSpawner : MonoBehaviour
     float verticalExtent;
     float horizontalExtend;
 
-    float minX;
-    float maxX;
+    float minX = -143;
+    float maxX = -134.5f;
     float minY;
 
-    void Awake() => GetCameraCoordinates();
+    private float timeSinceLastSpawn = 0.0f;
 
-    void Start() => StartCoroutine(PillSpawn());
-
-    void Update() => GetCameraCoordinates();
+    private void Update()
+    {
+        timeSinceLastSpawn += Time.deltaTime;
+        if(timeSinceLastSpawn > pillSpawnTime)
+        {
+            GetCameraCoordinates();
+            Vector3 pillSpawn = new Vector3(Random.Range(minX, maxX), minY, 0);
+            Instantiate(pills[Random.Range(0, pills.Count)], pillSpawn, Quaternion.identity);
+            timeSinceLastSpawn = 0.0f;
+        }
+    }
 
     void GetCameraCoordinates()
     {
@@ -31,19 +41,10 @@ public class PillSpawner : MonoBehaviour
         verticalExtent = Camera.main.orthographicSize;
         horizontalExtend = verticalExtent * Screen.width / Screen.height;
 
-        minX = (float)(horizontalExtend - mapX / 2.0);
-        maxX = (float)(mapX / 2.0 - horizontalExtend);
-        minY = (float)(verticalExtent - mapY / 2.0) + 0.75f;
-    }
+        //minX = (float)(mapX - horizontalExtend / 2.0);
+        //maxX = (float)(mapX + horizontalExtend / 2.0);
+        minY = (float)(mapY + verticalExtent / 2.0) + pillHeightOffset;
 
-    IEnumerator PillSpawn()
-    {
-        while (true)
-        {
-            Vector3 pillSpawn = new Vector3(Random.Range(minX, maxX), minY, 0);
-            Instantiate(pills[Random.Range(0, pills.Count)], pillSpawn, Quaternion.identity);
-
-            yield return new WaitForSeconds(pillSpawnTime);
-        }
+        Debug.LogError("Mapy[" + mapY + "], VerticalExtent[" + verticalExtent + "], MinY[" + minY + "]");
     }
 }

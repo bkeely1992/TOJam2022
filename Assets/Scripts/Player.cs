@@ -18,16 +18,10 @@ public class Player : MonoBehaviour
     [SerializeField] string firingSound = "";
     [SerializeField] string damageSound = "";
 
-    public enum ProjectileType
-    {
-        regular,
-        upgraded
-    }
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] GameObject upgradedProjectilePrefab;
     [SerializeField] float UpgradeDuration = 3f;
     float timeUpgraded = 0.0f;
-    ProjectileType currentProjectileType = ProjectileType.regular;
 
     public bool isInvincible
     {
@@ -284,18 +278,19 @@ public class Player : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         rigidBody.velocity = Vector2.zero;
         animator.SetTrigger("IsDead");
+        StartCoroutine(EndGame());
     }
 
-    private void UpgradeWeapon()
+    private IEnumerator EndGame()
     {
-        currentProjectileType = ProjectileType.upgraded;
-        timeUpgraded += Time.deltaTime;
+        yield return new WaitForSeconds(2);
+        FindObjectOfType<MenuManager>().LoadGameOverScene();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyDamage enemyDamage;
-        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((GameManager.Instance.enemyDamageLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
@@ -324,8 +319,15 @@ public class Player : MonoBehaviour
 
             switch (collectible.collectibleType)
             {
-                case CollectibleType.WeaponUpgrade: UpgradeWeapon(); break;
-                case CollectibleType.KeyItem: collectibles.Add(collectible); ; break;
+                case CollectibleType.WeaponUpgrade:
+                    timeUpgraded += Time.deltaTime;
+                    break;
+                case CollectibleType.Stomach_Key:
+                    GameManager.Instance.unlockDoor("stomach");
+                    break;
+                case CollectibleType.HealthPack:
+                    currentHealth = currentHealth + 1 >= maxHealth ? maxHealth : currentHealth + 1;
+                    break;
             }
 
             Destroy(collision.gameObject);

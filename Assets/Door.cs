@@ -17,7 +17,7 @@ public class Door : MonoBehaviour
 
     [SerializeField] int health = 1;
     [SerializeField] string openingSound = "";
-    [SerializeField] string identifier = "";
+    public string identifier = "";
     private Animator animator;
     private BoxCollider2D collider;
     
@@ -53,6 +53,8 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
+        Debug.LogError("Unlocking door.");
+        AudioManager.Instance.PlaySound(openingSound);
         status = Status.open;
         animator.SetTrigger("open");
         collider.enabled = false;

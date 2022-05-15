@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -9,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float timeToShowDamage = 0.25f;
     [SerializeField] List<SpriteRenderer> spritesToShowDamageOn = new List<SpriteRenderer>();
     [SerializeField] string damageSound = "";
+    [SerializeField] GameObject drop;
+    [SerializeField][Range(0,100)] float dropChance = 75;
 
     private float currentHealth = 1.0f;
     private float timeShowingDamage = 0.0f;
@@ -49,6 +52,12 @@ private void OnTriggerEnter2D(Collider2D collision)
             if (currentHealth <= 0)
             {
                 Instantiate(deathEffect, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
+
+                if (drop != null && Random.Range(0, 100) <= dropChance)
+                {
+                    Instantiate(drop, transform.position, Quaternion.identity);
+                }
+
                 Destroy(gameObject);
             }
         }

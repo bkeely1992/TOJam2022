@@ -12,7 +12,11 @@ public class DespawnOnPlayerImpact : MonoBehaviour
         if (player &&
             !player.isInvincible)
         {
-            Instantiate(impactEffect, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
+            if (impactEffect)
+            {
+                Instantiate(impactEffect, transform.position, Quaternion.identity, GameManager.Instance.effectContainer.transform);
+            }
+            
             Destroy(gameObject);
         }
     }

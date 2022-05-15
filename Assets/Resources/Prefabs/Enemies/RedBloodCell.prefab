@@ -278,3 +278,5 @@ MonoBehaviour:
   timeToShowDamage: 0.25
   spritesToShowDamageOn: []
   damageSound: EnemyIsHit
+  drop: {fileID: 8219082079843701263, guid: a8115ad326cccaf4b9277a46fd4b37da, type: 3}
+  dropChance: 25

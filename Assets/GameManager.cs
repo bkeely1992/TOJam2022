@@ -6,10 +6,12 @@ public class GameManager : Singleton<GameManager>
 {
     public LayerMask enemyDamageLayerMask;
     public LayerMask playerProjectileLayerMask;
+    public LayerMask playerLayerMask;
     public LayerMask collectibleLayerMask;
     public GameObject playerProjectileContainer;
     public GameObject effectContainer;
     public GameObject enemiesContainer;
+    public GameObject enemyProjectileContainer;
     public Player player;
     public List<Door> questDoors;
 
@@ -23,5 +25,18 @@ public class GameManager : Singleton<GameManager>
     void Update()
     {
         
+    }
+
+    public void unlockDoor(string doorName)
+    {
+        
+        foreach(Door door in questDoors)
+        {
+            if(door.identifier == doorName)
+            {
+                
+                door.OpenDoor();
+            }
+        }
     }
 }
