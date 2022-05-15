@@ -15,8 +15,15 @@ public class GameManager : Singleton<GameManager>
     public GameObject enemyProjectileContainer;
     public Player player;
     public List<Door> questDoors;
+    public GameObject pauseObject;
 
     [SerializeField] List<HealthBarIndicator> healthBarIndicators = new List<HealthBarIndicator>();
+
+    public enum GameState
+    {
+        running, paused
+    }
+    public GameState gameState = GameState.running;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +34,22 @@ public class GameManager : Singleton<GameManager>
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            switch (gameState)
+            {
+                case GameState.running:
+                    Time.timeScale = 0;
+                    gameState = GameState.paused;
+                    pauseObject.SetActive(true);
+                    break;
+                case GameState.paused:
+                    Time.timeScale = 1;
+                    gameState = GameState.running;
+                    pauseObject.SetActive(false);
+                    break;
+            }
+        }
     }
 
     public void unlockDoor(string doorName)
@@ -56,5 +78,22 @@ public class GameManager : Singleton<GameManager>
                 healthbarIndicator.turnOffSprite();
             }
         }
+    }
+
+    public void pauseGame()
+    {
+        Time.timeScale = 1;
+        gameState = GameState.running;
+        pauseObject.SetActive(false);
+    }
+
+    public void returnToMenu()
+    {
+
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
     }
 }
