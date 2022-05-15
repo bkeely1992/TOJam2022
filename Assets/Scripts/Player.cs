@@ -286,7 +286,7 @@ public class Player : MonoBehaviour
     private IEnumerator EndGame()
     {
         yield return new WaitForSeconds(2);
-        FindObjectOfType<MenuManager>().LoadGameOverScene();
+        FindObjectOfType<MenuManager>().LoadGameOver();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
