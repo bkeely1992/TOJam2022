@@ -6,11 +6,11 @@ public enum CollectibleType
 {
     WeaponUpgrade,
     Stomach_Key,
-    Brain_Key
+    Brain_Key,
+    HealthPack
 }
 
 public class Collectible : MonoBehaviour
 {
-
     public CollectibleType collectibleType;
 }

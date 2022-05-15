@@ -318,6 +318,9 @@ public class Player : MonoBehaviour
                 case CollectibleType.Stomach_Key:
                     GameManager.Instance.unlockDoor("stomach");
                     break;
+                case CollectibleType.HealthPack:
+                    currentHealth = currentHealth + 1 >= maxHealth ? maxHealth : currentHealth + 1;
+                    break;
             }
 
             Destroy(collision.gameObject);
