@@ -595,7 +595,7 @@ MonoBehaviour:
   animator: {fileID: 1832612979}
   sprite: {fileID: 1832612980}
   controllerAimOffset: 0.35
-  firingSound: 
+  firingSound: PlayerFires
   damageSound: PlayerIsHit
   projectilePrefab: {fileID: 5205493412348295498, guid: 6bc02457087930b49b7a710a5bd94fcd, type: 3}
   upgradedProjectilePrefab: {fileID: 0}
