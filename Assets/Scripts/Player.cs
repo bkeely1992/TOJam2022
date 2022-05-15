@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] float controllerAimOffset = 0.35f;
+    [SerializeField] string firingSound = "";
+    [SerializeField] string damageSound = "";
 
     public enum ProjectileType
     {
@@ -214,7 +216,7 @@ public class Player : MonoBehaviour
 
                 if (projectile != null)
                 {
-                    Debug.LogError("Spawned projectile.");
+                    AudioManager.Instance.PlaySound(firingSound, true);
                     spawningPosition = firingDirectionMap[currentAimingDirection].spawningPosition.transform.position;
                     spawningRotation = Quaternion.Euler(0, 0, firingDirectionMap[currentAimingDirection].rotation);
                     Instantiate(projectile, spawningPosition, spawningRotation, GameManager.Instance.playerProjectileContainer.transform);
@@ -256,6 +258,7 @@ public class Player : MonoBehaviour
     {
         if (!isDead)
         {
+            AudioManager.Instance.PlaySound(damageSound);
             currentHealth -= damage;
 
             if (currentHealth <= 0)
