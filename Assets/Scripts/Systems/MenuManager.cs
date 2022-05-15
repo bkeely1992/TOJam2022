@@ -8,8 +8,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] int loadMainMenuScene = 0;
     [SerializeField] int loadGameScene = 1;
     [SerializeField] int loadGameOverScene = 2;
-    [SerializeField] int loadCreditsScene = 3;
     [SerializeField] int loadWinScene = 3;
+    [SerializeField] int loadCreditsScene = 4;
     
 
     void Start() => AudioManager.Instance.PlaySound("Hospital Sounds");
