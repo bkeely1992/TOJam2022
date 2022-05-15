@@ -33,7 +33,7 @@ public class WhiteBloodCell : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timeSinceLastCheck += Time.deltaTime;
         if(timeSinceLastCheck > timeToCheck)
