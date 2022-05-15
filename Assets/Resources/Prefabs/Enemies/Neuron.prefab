@@ -143,6 +143,8 @@ MonoBehaviour:
   spritesToShowDamageOn:
   - {fileID: 6722443545090345145}
   damageSound: EnemyIsHit
+  drop: {fileID: 8219082079843701263, guid: a8115ad326cccaf4b9277a46fd4b37da, type: 3}
+  dropChance: 25
 --- !u!70 &1590024984
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
