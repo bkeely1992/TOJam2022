@@ -11,6 +11,7 @@ public class WhiteBloodCell : MonoBehaviour
     [SerializeField] List<Sprite> possibleFaces;
     [SerializeField] SpriteRenderer faceSprite;
     [SerializeField] List<GameObject> possibleWeapons;
+    
 
     public enum State
     {
@@ -20,6 +21,7 @@ public class WhiteBloodCell : MonoBehaviour
     private State state = State.wait;
     private float currentSpeed = 0.0f;
     private float timeSinceLastCheck = 0.0f;
+    
 
     // Start is called before the first frame update
     void Start()

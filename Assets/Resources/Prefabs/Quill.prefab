@@ -189,6 +189,7 @@ MonoBehaviour:
   speed: 16
   damage: 1
   impactPrefab: {fileID: 1262171642111070466, guid: 61c3d84bad391024a8636901997819d2, type: 3}
+  hitSound: ProjectileHit
 --- !u!61 &5543034047431379484
 BoxCollider2D:
   m_ObjectHideFlags: 0

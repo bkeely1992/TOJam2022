@@ -16,6 +16,7 @@ public class Door : MonoBehaviour
     public Status status = Status.closed;
 
     [SerializeField] int health = 1;
+    [SerializeField] string openingSound = "";
     private Animator animator;
     private BoxCollider2D collider;
     
@@ -35,6 +36,7 @@ public class Door : MonoBehaviour
             health -= damage;
             if (health <= 0)
             {
+                AudioManager.Instance.PlaySound(openingSound);
                 status = Status.open;
                 animator.SetTrigger("open");
                 collider.enabled = false;

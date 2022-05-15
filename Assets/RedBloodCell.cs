@@ -15,6 +15,7 @@ public class RedBloodCell : MonoBehaviour
         direction = new Vector3(0, 0, Random.Range(-180, 180));
         transform.rotation = Quaternion.Euler(direction);
         direction = transform.up;
+        transform.rotation = Quaternion.identity;
     }
 
     // Update is called once per frame

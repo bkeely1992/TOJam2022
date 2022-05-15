@@ -135,6 +135,7 @@ MonoBehaviour:
   variant: 0
   status: 1
   health: 5
+  openingSound: DoorOpens
 --- !u!95 &1763411183572123689
 Animator:
   serializedVersion: 4
