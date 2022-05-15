@@ -338,5 +338,9 @@ public class Player : MonoBehaviour
 
             Destroy(collision.gameObject);
         }
+        else if ((GameManager.Instance.brainLayerMask & (1 << collision.gameObject.layer)) != 0)
+        {
+            FindObjectOfType<MenuManager>().LoadWinScene();
+        }
     }
 }
