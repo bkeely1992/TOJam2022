@@ -14,6 +14,8 @@ public class GameManager : Singleton<GameManager>
     public Player player;
     public List<Door> questDoors;
 
+    [SerializeField] List<HealthBarIndicator> healthBarIndicators = new List<HealthBarIndicator>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,21 @@ public class GameManager : Singleton<GameManager>
             {
                 
                 door.OpenDoor();
+            }
+        }
+    }
+
+    public void updateUIHealthBar(int healthValue)
+    {
+        foreach(HealthBarIndicator healthbarIndicator in healthBarIndicators)
+        {
+            if(healthbarIndicator.healthBarIndex <= healthValue)
+            {
+                healthbarIndicator.turnOnSprite();
+            }
+            else
+            {
+                healthbarIndicator.turnOffSprite();
             }
         }
     }

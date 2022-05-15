@@ -255,6 +255,8 @@ public class Player : MonoBehaviour
             AudioManager.Instance.PlaySound(damageSound);
             currentHealth -= damage;
 
+            GameManager.Instance.updateUIHealthBar(currentHealth);
+
             if (currentHealth <= 0)
             {
                 Die();
@@ -318,8 +320,12 @@ public class Player : MonoBehaviour
                 case CollectibleType.Stomach_Key:
                     GameManager.Instance.unlockDoor("stomach");
                     break;
+                case CollectibleType.Brain_Key:
+                    GameManager.Instance.unlockDoor("brain");
+                    break;
                 case CollectibleType.HealthPack:
                     currentHealth = currentHealth + 1 >= maxHealth ? maxHealth : currentHealth + 1;
+                    GameManager.Instance.updateUIHealthBar(currentHealth);
                     break;
             }
 

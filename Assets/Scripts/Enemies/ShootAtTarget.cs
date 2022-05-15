@@ -16,6 +16,10 @@ public class ShootAtTarget : MonoBehaviour
     {
         if (timeSinceFire >= fireDelay)
         {
+            if (!targetTransform)
+            {
+                targetTransform = GameManager.Instance.player.gameObject.transform;
+            }
             timeSinceFire = 0.0f;
             var dir = targetTransform.position - transform.position;
 
