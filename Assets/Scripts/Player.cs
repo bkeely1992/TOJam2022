@@ -18,16 +18,10 @@ public class Player : MonoBehaviour
     [SerializeField] string firingSound = "";
     [SerializeField] string damageSound = "";
 
-    public enum ProjectileType
-    {
-        regular,
-        upgraded
-    }
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] GameObject upgradedProjectilePrefab;
     [SerializeField] float UpgradeDuration = 3f;
     float timeUpgraded = 0.0f;
-    ProjectileType currentProjectileType = ProjectileType.regular;
 
     public bool isInvincible
     {
@@ -286,16 +280,10 @@ public class Player : MonoBehaviour
         animator.SetTrigger("IsDead");
     }
 
-    private void UpgradeWeapon()
-    {
-        currentProjectileType = ProjectileType.upgraded;
-        timeUpgraded += Time.deltaTime;
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyDamage enemyDamage;
-        if ((collision.gameObject.layer << GameManager.Instance.enemyDamageLayerMask) > 0)
+        if ((GameManager.Instance.enemyDamageLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
             enemyDamage = collision.gameObject.GetComponent<EnemyDamage>();
             if (enemyDamage)
@@ -324,7 +312,7 @@ public class Player : MonoBehaviour
 
             switch (collectible.collectibleType)
             {
-                case CollectibleType.WeaponUpgrade: UpgradeWeapon(); break;
+                case CollectibleType.WeaponUpgrade: timeUpgraded += Time.deltaTime; break;
                 case CollectibleType.KeyItem: collectibles.Add(collectible); ; break;
             }
 
