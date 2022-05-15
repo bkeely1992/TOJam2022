@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
     public LayerMask collectibleLayerMask;
     public GameObject playerProjectileContainer;
     public GameObject effectContainer;
+    public GameObject enemiesContainer;
     public Player player;
 
     // Start is called before the first frame update
