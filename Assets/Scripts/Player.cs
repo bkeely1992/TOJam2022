@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     {
         get
         {
-            return timeInvincible > 0;
+            return timeInvincible > 0 || isDodging;
         }
     }
     public Direction currentAimingDirection;
@@ -59,6 +59,9 @@ public class Player : MonoBehaviour
     int currentHealth = 5;
     float timeInvincible = 0.0f;
     float timeReloading = 0.0f;
+
+    [SerializeField] float dodgeSpeed = 20f;
+    bool isDodging = false;
 
     Dictionary<FiringDirection.Direction, FiringDirection> firingDirectionMap = new Dictionary<Direction, FiringDirection>();
     bool isDead = false;
@@ -174,6 +177,32 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnDodge(InputValue inputValue)
+    {
+        if (inputValue.isPressed && !isDead && !isDodging && moveInput != Vector2.zero)
+            StartCoroutine(Dodge());
+    }
+
+    private IEnumerator Dodge()
+    {
+        isDodging = true;
+
+        var originalScale = gameObject.transform.localScale;
+
+        if (moveInput.x < 0)
+            gameObject.transform.localScale = new Vector2(originalScale.x * -1, originalScale.y);
+
+        animator.SetBool("IsDodging", true);
+
+        rigidBody.AddForce(moveInput * dodgeSpeed);
+
+        yield return new WaitForSeconds(0.5f);
+
+        gameObject.transform.localScale = originalScale;
+        animator.SetBool("IsDodging", false);
+        isDodging = false;
+    }
+
     private void FireProjectile()
     {
         if (isFiring)
@@ -213,13 +242,12 @@ public class Player : MonoBehaviour
         {
             animator.SetFloat("XInput", 0);
             animator.SetFloat("YInput", -1);
-
         }
     }
 
     void Move()
     {
-        if (!isDead)
+        if (!isDead && !isDodging)
         {
             var delta = moveInput * moveSpeed;
             rigidBody.velocity = delta;
@@ -239,8 +267,11 @@ public class Player : MonoBehaviour
             }
             else
             {
-                timeInvincible += Time.deltaTime;
-                sprite.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                if (!isInvincible)
+                {
+                    timeInvincible += Time.deltaTime;
+                    sprite.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+                }
             }
         }
     }
@@ -249,6 +280,7 @@ public class Player : MonoBehaviour
     {
         isDead = true;
         isFiring = false;
+        isDodging = false;
         GetComponent<CapsuleCollider2D>().enabled = false;
         rigidBody.velocity = Vector2.zero;
         animator.SetTrigger("IsDead");
