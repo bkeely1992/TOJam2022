@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject effectContainer;
     public GameObject enemiesContainer;
     public Player player;
+    public List<Door> questDoors;
 
     // Start is called before the first frame update
     void Start()

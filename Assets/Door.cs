@@ -17,6 +17,7 @@ public class Door : MonoBehaviour
 
     [SerializeField] int health = 1;
     [SerializeField] string openingSound = "";
+    [SerializeField] string identifier = "";
     private Animator animator;
     private BoxCollider2D collider;
     
