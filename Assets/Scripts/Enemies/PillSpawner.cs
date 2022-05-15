@@ -17,22 +17,23 @@ public class PillSpawner : MonoBehaviour
     float maxX;
     float minY;
 
-    void Awake()
+    void Awake() => GetCameraCoordinates();
+
+    void Start() => StartCoroutine(PillSpawn());
+
+    void Update() => GetCameraCoordinates();
+
+    void GetCameraCoordinates()
     {
         mapX = Camera.main.transform.position.x;
         mapY = Camera.main.transform.position.y;
 
         verticalExtent = Camera.main.orthographicSize;
         horizontalExtend = verticalExtent * Screen.width / Screen.height;
-    }
 
-    void Start()
-    {
         minX = (float)(horizontalExtend - mapX / 2.0);
         maxX = (float)(mapX / 2.0 - horizontalExtend);
         minY = (float)(verticalExtent - mapY / 2.0) + 0.75f;
-
-        StartCoroutine(PillSpawn());
     }
 
     IEnumerator PillSpawn()
