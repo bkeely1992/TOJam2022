@@ -24,4 +24,17 @@ public class GameManager : Singleton<GameManager>
     {
         
     }
+
+    public void unlockDoor(string doorName)
+    {
+        
+        foreach(Door door in questDoors)
+        {
+            if(door.identifier == doorName)
+            {
+                
+                door.OpenDoor();
+            }
+        }
+    }
 }

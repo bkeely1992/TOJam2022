@@ -1,0 +1,1442 @@
+fileFormatVersion: 2
+guid: 9a5f9a8252db6014786f6fdfa9294e28
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 220
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30396a30d34fa474ba216f97057c4129
+      internalID: 500221429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d712ef3e85e9354ab3a65cc2a77b7f4
+      internalID: 1887306198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bad072b3123634f83a42380aa433ca
+      internalID: 1211923122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77edfb84e061824583877f6b7bd728a
+      internalID: 979804973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_4
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f3fe2adbd5d624da4660bb1c6dd828
+      internalID: 615678801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_5
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8988f76e2aa6e0438b6c3ee9ca04a35
+      internalID: 748029244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_6
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02ea36fe34fa5949948775eda2af4ef
+      internalID: 1855887932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_7
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe57c4f5a03ea6f4faae4d462a140339
+      internalID: 166223312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_8
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071b635fb2044542b68c3280e14c24b
+      internalID: -958470576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_9
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7808d2ebc757849bb7c24c5c22119c
+      internalID: 341777807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c7202bd007a094c952c3820c74e3c6
+      internalID: 1202501960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cd1c2bb606ed74e9fe901b49f5484b
+      internalID: 2016963299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_12
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59d7e7708b3ca64cb0fed70c7cf727d
+      internalID: 1429091062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fd76d0cd83b5c4cb672b32ceb38fb3
+      internalID: -550706345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_14
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aebf2d40c8fd2f40a906ac4883d9088
+      internalID: -1386579384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_15
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a7a22be262b0644bbf66d716673f7a
+      internalID: 1286776856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_16
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a357a51e9c4e82468ed07f5193d5ace
+      internalID: 58372684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_17
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e5bab082145204dab72a7afb60a0ce
+      internalID: 330439427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_18
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c9f2f6bafebdc4b95db3a8e9841ff4
+      internalID: -510096244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_19
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b561a1e9d8b804a89838983138a5fb
+      internalID: -1250880444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87b973613bcedd4ead0a8f9ddf9a2b1
+      internalID: -102783159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_21
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6997a9f4553a3ac4abab4f3f348d4030
+      internalID: -177860814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_22
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c89ebd2ead4c34fab8239407613e17
+      internalID: 1022187409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0058e1d2dad1dc14583292f650a67b55
+      internalID: -134352551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_24
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf266d3c95249e40914101f2ce3e0d7
+      internalID: -1506485653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_25
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abb0d835099b6c47b642b069d2faa92
+      internalID: -1627685936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_26
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63613742017a4e7468948bd972cd2298
+      internalID: 1744202295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_27
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5a007b2e7797341b6cc7be03095ff8
+      internalID: 405063317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_28
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f428b963494c24a95de442ba802408
+      internalID: 1618088452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_29
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160180dd1d80e3e48ae6f063754e3430
+      internalID: 1361659523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a517d27cf02df384fb546acc362067fc
+      internalID: 772616557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_31
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd505b05d21a0aa4087707fb9274cbb4
+      internalID: -1091480057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aac81c782743e14981dcace4afcee7a
+      internalID: -808777868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86fcd0ed5606c740b30d1ab44ccb861
+      internalID: -485068521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_34
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fd48da9995c214eacb59213cf308c3
+      internalID: 51805814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_35
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f200e46a4fc9e499e54a6d296d669d
+      internalID: -1451293103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_36
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bed3d0cec2afcb469030447d2b337e8
+      internalID: -525568058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_37
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e7f6ff43da2e74db0d37c5804c3ae8
+      internalID: 427000041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_38
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c29eb9f25016e46b8086a350c94e23
+      internalID: -326122724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_39
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935f868e47288b7498cc206c7d8d0fe2
+      internalID: -2044825325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5682dedd82511f48ab6cde9574db281
+      internalID: -2038797137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_41
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4e2e3dc4bf8df44b94c3fab833f41d
+      internalID: -27041273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_42
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbfd8991215c4a44850b6489ab1b187
+      internalID: 1382741825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_43
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126d0c659c9e3ff43800d7aa99cee8de
+      internalID: -1468423118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_44
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db2312240c90cc4bb0a9493901ed18f
+      internalID: -1140934982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_45
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0fd76bc98807a478784c445f4913c3
+      internalID: 103690213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_46
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e1d90c625589940820a6241f105f2c
+      internalID: 287589697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_47
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807cf0e10585e4147ac77d648cdbcb20
+      internalID: -1658271685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_48
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88faac38ddf4ac44ab7f192b0900027
+      internalID: 195145013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_49
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef69eba25e8115c4db31a8e3a909146c
+      internalID: 613674184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b607bbd5fa6e3a544af4e86c44078e61
+      internalID: -386702640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_51
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f10429760023ee458878c056b2bb6af
+      internalID: -510448788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_52
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82b7816c2f6aae45b58dfa5c500883f
+      internalID: -959170339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_53
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7654fe17d4d1a141b82bb72614e3c7c
+      internalID: 626536774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_54
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0416bba73a3c40849824e8085e2761e3
+      internalID: 743350227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_55
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9b9d7d3a2399247abd7551678acc0e
+      internalID: 112487184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_56
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f40fa93845a8b646971192325377884
+      internalID: -1566872977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_57
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac4f8b3a52bff04d9c8df693af98a9c
+      internalID: 779743443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_58
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ca6a91f013a084f96dce11f0adf02d
+      internalID: 1568505575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_esophagus_59
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443982893d5cf4840ad17e9977062575
+      internalID: 1920471912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tile_Set_esophagus_18: -510096244
+      Tile_Set_esophagus_28: 1618088452
+      Tile_Set_esophagus_38: -326122724
+      Tile_Set_esophagus_9: 341777807
+      Tile_Set_esophagus_41: -27041273
+      Tile_Set_esophagus_34: 51805814
+      Tile_Set_esophagus_46: 287589697
+      Tile_Set_esophagus_22: 1022187409
+      Tile_Set_esophagus_12: 1429091062
+      Tile_Set_esophagus_7: 166223312
+      Tile_Set_esophagus_51: -510448788
+      Tile_Set_esophagus_39: -2044825325
+      Tile_Set_esophagus_56: -1566872977
+      Tile_Set_esophagus_16: 58372684
+      Tile_Set_esophagus_11: 2016963299
+      Tile_Set_esophagus_53: 626536774
+      Tile_Set_esophagus_2: 1211923122
+      Tile_Set_esophagus_25: -1627685936
+      Tile_Set_esophagus_58: 1568505575
+      Tile_Set_esophagus_19: -1250880444
+      Tile_Set_esophagus_37: 427000041
+      Tile_Set_esophagus_43: -1468423118
+      Tile_Set_esophagus_23: -134352551
+      Tile_Set_esophagus_57: 779743443
+      Tile_Set_esophagus_27: 405063317
+      Tile_Set_esophagus_15: 1286776856
+      Tile_Set_esophagus_5: 748029244
+      Tile_Set_esophagus_36: -525568058
+      Tile_Set_esophagus_21: -177860814
+      Tile_Set_esophagus_45: 103690213
+      Tile_Set_esophagus_17: 330439427
+      Tile_Set_esophagus_48: 195145013
+      Tile_Set_esophagus_30: 772616557
+      Tile_Set_esophagus_44: -1140934982
+      Tile_Set_esophagus_14: -1386579384
+      Tile_Set_esophagus_20: -102783159
+      Tile_Set_esophagus_3: 979804973
+      Tile_Set_esophagus_26: 1744202295
+      Tile_Set_esophagus_0: 500221429
+      Tile_Set_esophagus_33: -485068521
+      Tile_Set_esophagus_31: -1091480057
+      Tile_Set_esophagus_52: -959170339
+      Tile_Set_esophagus_42: 1382741825
+      Tile_Set_esophagus_49: 613674184
+      Tile_Set_esophagus_4: 615678801
+      Tile_Set_esophagus_6: 1855887932
+      Tile_Set_esophagus_50: -386702640
+      Tile_Set_esophagus_54: 743350227
+      Tile_Set_esophagus_35: -1451293103
+      Tile_Set_esophagus_55: 112487184
+      Tile_Set_esophagus_32: -808777868
+      Tile_Set_esophagus_8: -958470576
+      Tile_Set_esophagus_24: -1506485653
+      Tile_Set_esophagus_29: 1361659523
+      Tile_Set_esophagus_1: 1887306198
+      Tile_Set_esophagus_59: 1920471912
+      Tile_Set_esophagus_47: -1658271685
+      Tile_Set_esophagus_40: -2038797137
+      Tile_Set_esophagus_13: -550706345
+      Tile_Set_esophagus_10: 1202501960
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
