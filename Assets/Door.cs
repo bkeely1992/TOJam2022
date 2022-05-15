@@ -53,7 +53,6 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
-        Debug.LogError("Unlocking door.");
         AudioManager.Instance.PlaySound(openingSound);
         status = Status.open;
         animator.SetTrigger("open");

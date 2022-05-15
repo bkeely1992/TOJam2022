@@ -44,7 +44,5 @@ public class PillSpawner : MonoBehaviour
         //minX = (float)(mapX - horizontalExtend / 2.0);
         //maxX = (float)(mapX + horizontalExtend / 2.0);
         minY = (float)(mapY + verticalExtent / 2.0) + pillHeightOffset;
-
-        Debug.LogError("Mapy[" + mapY + "], VerticalExtent[" + verticalExtent + "], MinY[" + minY + "]");
     }
 }

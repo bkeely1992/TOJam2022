@@ -965,7 +965,7 @@ MonoBehaviour:
   Sounds:
   - name: Hospital Sounds
     clip: {fileID: 8300000, guid: 5bc979299abf9d148b9d22db84bd287e, type: 3}
-    volume: 1
+    volume: 0.197
     pitch: 1
     looping: 1
     source: {fileID: 0}
