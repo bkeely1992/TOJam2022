@@ -598,7 +598,7 @@ MonoBehaviour:
   firingSound: PlayerFires
   damageSound: PlayerIsHit
   projectilePrefab: {fileID: 5205493412348295498, guid: 6bc02457087930b49b7a710a5bd94fcd, type: 3}
-  upgradedProjectilePrefab: {fileID: 0}
+  upgradedProjectilePrefab: {fileID: 8983399475963952763, guid: 11626639b73581845a31213b3df71b99, type: 3}
   UpgradeDuration: 3
   currentAimingDirection: 0
   firingDirections:
@@ -626,6 +626,7 @@ MonoBehaviour:
   - direction: 7
     spawningPosition: {fileID: 1137019375}
     rotation: 180
+  dodgeSpeed: 120
 --- !u!70 &7803078264932522013
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
