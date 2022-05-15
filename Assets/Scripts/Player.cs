@@ -278,6 +278,13 @@ public class Player : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         rigidBody.velocity = Vector2.zero;
         animator.SetTrigger("IsDead");
+        StartCoroutine(EndGame());
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(2);
+        FindObjectOfType<MenuManager>().LoadGameOverScene();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
