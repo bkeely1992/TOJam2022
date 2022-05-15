@@ -1,0 +1,1442 @@
+fileFormatVersion: 2
+guid: e179dfa330a41ce44880fa57d3da5486
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 220
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile_Set_stomach_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2171647af1924b4889a274ec00e021d
+      internalID: -743769697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a076179ea093d1148bacc3d381fb3d12
+      internalID: 1973402632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6365f13c0584b4f9b8e21bf9b206d9
+      internalID: -1923402089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243bedb3ae2068e4782ec0764ba9c9a2
+      internalID: 1683013439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_4
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b87c46462ce1ad4cbcfb1c9f2274fac
+      internalID: -102267493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_5
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954aac111b173c64d9c689f6b7833854
+      internalID: -1744501602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_6
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0f67c2fcddcc745ade180b8a43ef4d
+      internalID: 731967277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_7
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e57a5b7159ecd4ea4e7f7540dd629e
+      internalID: 1253491639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_8
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbae350beb7de949bdb08adeecae8bf
+      internalID: 166017313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_9
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1085
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6d4decbbf160845a951a93140c9cba
+      internalID: -1182198228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096405312f61f454795865265478fc05
+      internalID: 381302796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30762504dd99e04db6ed0df4cc8684d
+      internalID: 383782853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_12
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5cb2788056294c88bf4f2da6ecdd0
+      internalID: 770253684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ac4ae3a4e77cd49b84f252fe84168c
+      internalID: -890283877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_14
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c280f3d197f300a4f8d0501b8e8f1da1
+      internalID: -565770274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_15
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff68e01f9641655409bbd706b3a839cd
+      internalID: -553335583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_16
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad5402ab28740e4e8758c773dce3ba6
+      internalID: 1486212669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_17
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494a7a53bb9d87143ae6f2b20cd7e32e
+      internalID: -1054931440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_18
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4ac05e2dc3df844b3b2a78483de2a0
+      internalID: -1899508397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_19
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 868
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ca2fdf5e2937b4d8cd7416206d3a6a
+      internalID: -2043350373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae1b59faa9fddc4b99a5976d48428bc
+      internalID: -1826041573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_21
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdffe92c606ae044b636fdcabd26927
+      internalID: -168985673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_22
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b3114203a01354a9fb75b70fa3e7a7
+      internalID: -1376145364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f548bf1ac102d45a073db9eacaa99a
+      internalID: -668987264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_24
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8da087980afd645838a76ba502e7ed
+      internalID: -1575759366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_25
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2444927e286be243a49634f2a9a08e1
+      internalID: -1494979747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_26
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b236c3561a0ca4abbccbf733938212
+      internalID: -472659171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_27
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe6cec4c3f4bab4cac7ea80b72ad924
+      internalID: -516548748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_28
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176607c77074cf146bd55c3e87c9ffcf
+      internalID: 1899821836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_29
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 651
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c7e632b1ec4934692d4e9dc02b606e
+      internalID: -1138316774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c5e9159f4613f4dbe63397ae6be18a
+      internalID: 673801579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_31
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdca2619c4cf2c94487537ce625dc565
+      internalID: -633173966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_32
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb199b34d1dbdfc429aedc167f6e6555
+      internalID: -1067674370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951eddc791a66e141961b3490d10feb9
+      internalID: -1332604023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_34
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384ef915b817abb46ada6e3acf851489
+      internalID: -985249362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_35
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddb46b5e5e9e6745b5a3b080faa40da
+      internalID: 269757138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_36
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40a1304faf917c4fa61144a6c223d2d
+      internalID: 77863006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_37
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8e1d68dfec7ed489bc409f22c62f1c
+      internalID: -1584457577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_38
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bb678d5172d784a84d9ed6fa194b53
+      internalID: -946849053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_39
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 434
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0eef23ed694c0b48a5756aa6370dffb
+      internalID: 367783964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b65235c4618884289afe917d72bc23
+      internalID: -267092816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_41
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9159d5b302d2dc54990854a76a14190e
+      internalID: -1848700930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_42
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2467f45e63ccf084d911ffcb73780d38
+      internalID: -456784422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_43
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6055e7696b82544b17d176e9223481
+      internalID: 450759981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_44
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b6442fd6874ef41a3821b63ebeb688
+      internalID: 643278035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_45
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8dfd98b692dff4c8304dbbfc627a36
+      internalID: 580039573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_46
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5edb3a49dfaa8e40ac696e2677f7b8d
+      internalID: -37937439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_47
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bba3235cf83c2459d7d7b94f060038
+      internalID: 130995428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_48
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c09f244ea5d4f42ac1937d4a533b80
+      internalID: 2135588720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_49
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 217
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cb2ca8826cb394da8e9e90952ef8e6
+      internalID: 512531957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194039bd97808ba4abf755b1c75ab8f4
+      internalID: 2051975018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_51
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19ca8252ce5cca49b89020a626c9fa3
+      internalID: -294545624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_52
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bdeada26e8f08429f9d4705b43f77f
+      internalID: -143935433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_53
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eea83274671b5449a1a720ec738cceb
+      internalID: -1883420923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_54
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138aaca58c009434690d5846d138311a
+      internalID: -337804058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_55
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283d96b5ac269af429fd14d16db124de
+      internalID: 840811852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_56
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c3eb95d11d76b44a04c6e64088bd19
+      internalID: -1433471615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_57
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ad973ce72a10243bdf041cf4cc585f
+      internalID: -1241893021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_58
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151a54b1f59dc8d48b99a28b6a3bb543
+      internalID: 646568540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Set_stomach_59
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 0
+        width: 217.6
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc1a3fa3d5415b46ae1fb7f322bccff
+      internalID: 116532232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tile_Set_stomach_25: -1494979747
+      Tile_Set_stomach_27: -516548748
+      Tile_Set_stomach_17: -1054931440
+      Tile_Set_stomach_21: -168985673
+      Tile_Set_stomach_41: -1848700930
+      Tile_Set_stomach_11: 383782853
+      Tile_Set_stomach_34: -985249362
+      Tile_Set_stomach_7: 1253491639
+      Tile_Set_stomach_14: -565770274
+      Tile_Set_stomach_54: -337804058
+      Tile_Set_stomach_30: 673801579
+      Tile_Set_stomach_58: 646568540
+      Tile_Set_stomach_12: 770253684
+      Tile_Set_stomach_24: -1575759366
+      Tile_Set_stomach_3: 1683013439
+      Tile_Set_stomach_40: -267092816
+      Tile_Set_stomach_33: -1332604023
+      Tile_Set_stomach_37: -1584457577
+      Tile_Set_stomach_5: -1744501602
+      Tile_Set_stomach_16: 1486212669
+      Tile_Set_stomach_26: -472659171
+      Tile_Set_stomach_59: 116532232
+      Tile_Set_stomach_4: -102267493
+      Tile_Set_stomach_13: -890283877
+      Tile_Set_stomach_52: -143935433
+      Tile_Set_stomach_23: -668987264
+      Tile_Set_stomach_48: 2135588720
+      Tile_Set_stomach_46: -37937439
+      Tile_Set_stomach_57: -1241893021
+      Tile_Set_stomach_56: -1433471615
+      Tile_Set_stomach_10: 381302796
+      Tile_Set_stomach_18: -1899508397
+      Tile_Set_stomach_43: 450759981
+      Tile_Set_stomach_35: 269757138
+      Tile_Set_stomach_0: -743769697
+      Tile_Set_stomach_9: -1182198228
+      Tile_Set_stomach_36: 77863006
+      Tile_Set_stomach_53: -1883420923
+      Tile_Set_stomach_42: -456784422
+      Tile_Set_stomach_55: 840811852
+      Tile_Set_stomach_22: -1376145364
+      Tile_Set_stomach_29: -1138316774
+      Tile_Set_stomach_38: -946849053
+      Tile_Set_stomach_31: -633173966
+      Tile_Set_stomach_19: -2043350373
+      Tile_Set_stomach_49: 512531957
+      Tile_Set_stomach_1: 1973402632
+      Tile_Set_stomach_45: 580039573
+      Tile_Set_stomach_20: -1826041573
+      Tile_Set_stomach_8: 166017313
+      Tile_Set_stomach_32: -1067674370
+      Tile_Set_stomach_51: -294545624
+      Tile_Set_stomach_47: 130995428
+      Tile_Set_stomach_39: 367783964
+      Tile_Set_stomach_50: 2051975018
+      Tile_Set_stomach_15: -553335583
+      Tile_Set_stomach_28: 1899821836
+      Tile_Set_stomach_44: 643278035
+      Tile_Set_stomach_6: 731967277
+      Tile_Set_stomach_2: -1923402089
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

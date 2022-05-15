@@ -312,8 +312,12 @@ public class Player : MonoBehaviour
 
             switch (collectible.collectibleType)
             {
-                case CollectibleType.WeaponUpgrade: timeUpgraded += Time.deltaTime; break;
-                case CollectibleType.KeyItem: collectibles.Add(collectible); ; break;
+                case CollectibleType.WeaponUpgrade:
+                    timeUpgraded += Time.deltaTime;
+                    break;
+                case CollectibleType.Stomach_Key:
+                    GameManager.Instance.unlockDoor("stomach");
+                    break;
             }
 
             Destroy(collision.gameObject);

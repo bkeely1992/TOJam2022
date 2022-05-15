@@ -5,7 +5,8 @@ using UnityEngine;
 public enum CollectibleType
 {
     WeaponUpgrade,
-    KeyItem
+    Stomach_Key,
+    Brain_Key
 }
 
 public class Collectible : MonoBehaviour
