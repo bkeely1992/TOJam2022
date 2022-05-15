@@ -19,7 +19,7 @@ public class RedBloodCell : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = transform.position + (direction * speed * Time.deltaTime);
     }

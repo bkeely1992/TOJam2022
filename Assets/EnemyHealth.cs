@@ -34,9 +34,9 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.gameObject.layer << GameManager.Instance.playerProjectileLayerMask) > 0)
+        if ((GameManager.Instance.playerProjectileLayerMask & (1 << collision.gameObject.layer)) != 0)
         {
             AudioManager.Instance.PlaySound(damageSound, true);
             timeShowingDamage += Time.deltaTime;
