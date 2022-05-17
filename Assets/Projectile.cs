@@ -24,7 +24,8 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Player>() ||
-            collision.gameObject.GetComponent<Projectile>())
+            collision.gameObject.GetComponent<Projectile>() ||
+            collision.gameObject.GetComponent<AvoidProjectiles>())
         {
             return;
         }

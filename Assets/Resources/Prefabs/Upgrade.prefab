@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4216084033369016626}
   - component: {fileID: 4216084033369016627}
   - component: {fileID: 4216084033369016636}
+  - component: {fileID: 7983330930320467356}
   m_Layer: 7
   m_Name: Upgrade
   m_TagString: Collectible
@@ -200,7 +201,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532a1fa83a90a6747ac3efa250ad62b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleType: 1
+  collectibleType: 0
+--- !u!114 &7983330930320467356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216084033369016637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22b1557f8758a14cae4d699b79a2b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8229923779554974083
 PrefabInstance:
   m_ObjectHideFlags: 0

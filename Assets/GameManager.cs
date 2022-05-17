@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
     public LayerMask playerLayerMask;
     public LayerMask collectibleLayerMask;
     public LayerMask brainLayerMask;
+    public LayerMask dialogueTriggerLayerMask;
     public GameObject playerProjectileContainer;
     public GameObject effectContainer;
     public GameObject enemiesContainer;

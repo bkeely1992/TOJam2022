@@ -341,5 +341,13 @@ public class Player : MonoBehaviour
         {
             FindObjectOfType<MenuManager>().LoadWinScene();
         }
+        else if((GameManager.Instance.dialogueTriggerLayerMask & (1 << collision.gameObject.layer)) != 0)
+        {
+            DialogueTrigger dialogueTrigger = collision.GetComponent<DialogueTrigger>();
+            if (dialogueTrigger)
+            {
+                DialogueManager.Instance.startDialogueExchange(dialogueTrigger.dialogueExchangeIdentifier);
+            }
+        }
     }
 }
